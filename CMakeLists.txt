@@ -52,6 +52,11 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/Bsp/key.c
     ${CMAKE_SOURCE_DIR}/Bsp/log.c
 
+    # RTT library sources
+    ${CMAKE_SOURCE_DIR}/RTT/SEGGER_RTT.c
+    ${CMAKE_SOURCE_DIR}/RTT/SEGGER_RTT_printf.c
+    ${CMAKE_SOURCE_DIR}/RTT/RTT_DEBUG.c
+
     # App sources
     ${CMAKE_SOURCE_DIR}/App/sm/sm.c
 )
@@ -62,6 +67,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
 
     ${CMAKE_SOURCE_DIR}/Bsp
     ${CMAKE_SOURCE_DIR}/App/sm
+    ${CMAKE_SOURCE_DIR}/RTT
 )
 
 # Add project symbols (macros)

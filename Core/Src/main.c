@@ -54,7 +54,8 @@
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-
+static void on_timer_100ms(void);
+static void on_timer_1s(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
