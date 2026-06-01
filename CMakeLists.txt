@@ -59,6 +59,9 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 
     # App sources
     ${CMAKE_SOURCE_DIR}/App/sm/sm.c
+    ${CMAKE_SOURCE_DIR}/App/sm/state_idle.c
+    ${CMAKE_SOURCE_DIR}/App/sm/state_work.c
+    ${CMAKE_SOURCE_DIR}/App/sm/state_sleep.c
 )
 
 # Add include paths
